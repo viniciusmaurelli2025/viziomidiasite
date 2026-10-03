@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Montserrat', sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-vizio-bg: #111111;
+  --color-vizio-card: #181818;
+  --color-vizio-cream: #F4F1EC;
+  --color-vizio-orange: #FF5A1F;
+  --color-vizio-orange-bright: #FF7A30;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #111111;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Subtle grid pattern background */
+.bg-tech-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.bg-tech-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Orange glow effects */
+.glow-orange {
+  box-shadow: 0 0 50px -10px rgba(255, 90, 31, 0.35);
+}
+
+.glow-orange-sm {
+  box-shadow: 0 0 24px -6px rgba(255, 90, 31, 0.25);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 90, 31, 0.5);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5A1F;
+}
+
+/* Marquee infinite animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
