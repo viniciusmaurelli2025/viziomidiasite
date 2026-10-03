@@ -1,0 +1,6 @@
+{
+  "name": "VIZIO Mídia — Website Institucional e Comercial",
+  "description": "Website institucional e comercial da VIZIO Mídia. Publicidade DOOH premium em movimento (VIZIO BUS | ABM) e shopping (VIZIO MALL | Barra Square).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
